@@ -1,0 +1,13 @@
+{
+  "name": "securepass-everything",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "bot",
+    "invite-checker"
+  ],
+  "scripts": {
+    "start:bot": "cd bot && node init-db.js && node deploy-commands.js && node index.js",
+    "start:invite": "cd invite-checker && npm start"
+  }
+}
