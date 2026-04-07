@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: SecurePass-Bot
+    runtime: node
+    rootDir: bot
+    buildCommand: npm install
+    startCommand: node init-db.js && node deploy-commands.js && node index.js
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+
+  - type: worker
+    name: Invite-Checker-Bot
+    runtime: node
+    rootDir: invite-checker
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: DATABASE_URL
+        sync: false

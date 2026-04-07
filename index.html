@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecurePass | Advanced Discord Verification Bot</title>
+  <meta name="description" content="Secure your Discord server with powerful anti-bot protection, CAPTCHA, and role automation with SecurePass.">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="bg-blobs">
+    <div class="blob"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <nav>
+    <a href="#" class="logo-container">
+      <img src="logo.png" alt="SecurePass Logo">
+      <span class="logo-text">SecurePass</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#why">Why Us?</a></li>
+    </ul>
+    <a href="https://discord.com/oauth2/authorize?client_id=1490543537505308892&permissions=8&integration_type=0&scope=bot" class="btn btn-primary" id="nav-cta">
+      Add to Discord
+    </a>
+  </nav>
+
+  <section class="hero reveal">
+    <div class="badge">Trusted by Top Communities</div>
+    <h1>SecurePass – Advanced Discord Verification</h1>
+    <p>Secure your server with powerful anti-bot protection and seamless verification flows designed for modern Discord communities.</p>
+    <div class="hero-btns">
+      <a href="https://discord.com/oauth2/authorize?client_id=1490543537505308892&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">
+        <i data-lucide="plus-circle"></i> Add to Discord
+      </a>
+      <a href="#features" class="btn btn-secondary">
+        <i data-lucide="info"></i> Learn More
+      </a>
+    </div>
+    <div class="hero-visual">
+       <img src="logo.png" alt="SecurePass Interface Mockup">
+    </div>
+  </section>
+
+  <section id="features" class="reveal">
+    <div class="section-header">
+      <h2>Advanced Features</h2>
+      <p>Built with enterprise-grade security tools to keep your server safe.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+        <h3>CAPTCHA Verification</h3>
+        <p>Prevent automated bot accounts from joining with human-only verification steps.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="user-x"></i></div>
+        <h3>Anti-Bot Protection</h3>
+        <p>Advanced heuristics to detect and block malicious accounts before they act.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="users"></i></div>
+        <h3>Alt Detection</h3>
+        <p>Identify users trying to bypass bans using modern fingerprinting techniques.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="lock"></i></div>
+        <h3>Role-Based Access</h3>
+        <p>Automatically assign roles upon verification completion, keeping your server organized.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="bell"></i></div>
+        <h3>Logs & Alerts</h3>
+        <p>Get real-time updates in your private staff channels for every verification attempt.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="terminal"></i></div>
+        <h3>Slash Commands</h3>
+        <p>Easy interaction with /verify, /setup, and /stats. Modern and fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="reveal">
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Setup is simple and takes less than 60 seconds.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-content">
+          <span class="step-badge">Phase 01</span>
+          <h3>Invite SecurePass</h3>
+          <p>Authorize the bot to your server using the official Discord invite link. No complex setup or server-side scripts required.</p>
+          <ul class="step-list">
+            <li><i data-lucide="check"></i> Official OAuth Link</li>
+            <li><i data-lucide="check"></i> Secure Integration</li>
+          </ul>
+        </div>
+        <div class="step-visual">
+          <div class="step-icon-large"><i data-lucide="link"></i></div>
+        </div>
+      </div>
+
+      <div class="step reveal">
+        <div class="step-content">
+          <span class="step-badge">Phase 02</span>
+          <h3>Configure Settings</h3>
+          <p>Use the /setup command to customize your verification channel, roles, and protection sensitivity levels.</p>
+          <ul class="step-list">
+            <li><i data-lucide="check"></i> Customize Every Detail</li>
+            <li><i data-lucide="check"></i> Real-time Preview</li>
+          </ul>
+        </div>
+        <div class="step-visual">
+          <div class="step-icon-large"><i data-lucide="settings"></i></div>
+        </div>
+      </div>
+
+      <div class="step reveal">
+        <div class="step-content">
+          <span class="step-badge">Phase 03</span>
+          <h3>Users Verify Instantly</h3>
+          <p>New members click the verify button, complete a quick CAPTCHA, and gain access to your server safely.</p>
+          <ul class="step-list">
+            <li><i data-lucide="check"></i> Low Friction for Users</li>
+            <li><i data-lucide="check"></i> High Security for Admins</li>
+          </ul>
+        </div>
+        <div class="step-visual">
+          <div class="step-icon-large"><i data-lucide="user-check"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="reveal">
+    <div class="section-header">
+      <h2>Why SecurePass?</h2>
+      <p>The preferred choice for high-security communities.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <i data-lucide="zap"></i>
+        <h3>Fast & Reliable</h3>
+        <p>Built for speed and high uptime using the latest technologies.</p>
+      </div>
+      <div class="why-card">
+        <i data-lucide="database"></i>
+        <h3>CockroachDB Backend</h3>
+        <p>Enterprise-grade serverless database for ultimate data integrity.</p>
+      </div>
+      <div class="why-card">
+        <i data-lucide="cpu"></i>
+        <h3>Modern Setup</h3>
+        <p>Optimized for Discord's latest API version and interactions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder" class="reveal">
+    <div class="section-header">
+      <h2>Meet Our Founder</h2>
+      <p>The vision behind SecurePass's industry-leading technology.</p>
+    </div>
+    <div class="founder-card-container">
+      <div class="founder-card">
+        <div class="founder-badge">Founder & Lead Dev</div>
+        <div class="founder-visual">
+          <img src="founder.png" alt="Founder Profile">
+        </div>
+        <div class="founder-info">
+          <h3>SecurePass Creator</h3>
+          <p>Dedicated to building safer communities through advanced automation and security-first engineering.</p>
+          <div class="founder-contact">
+            <a href="https://discord.com/users/1414542711683289152" class="btn btn-secondary" target="_blank" style="width: 100%; justify-content: center;">
+              <i data-lucide="message-square"></i> DM on Discord
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section-wrapper reveal">
+    <div class="cta-container">
+      <h2>Protect your Discord server today.</h2>
+      <p>Join thousands of servers who trust SecurePass for their verification needs.</p>
+      <a href="https://discord.com/oauth2/authorize?client_id=1490543537505308892&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">
+        <i data-lucide="plus"></i> Add SecurePass Now
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo-container">
+          <img src="logo.png" alt="SecurePass Logo">
+          <span class="logo-text">SecurePass</span>
+        </a>
+        <p>Next-generation verification for modern Discord communities. Secure, fast, and simple.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="contact.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copyright">SecurePass © 2026. All rights reserved.</div>
+      <div class="footer-note">Handcrafted with <i data-lucide="heart" style="width: 14px; vertical-align: middle; color: #ef4444;"></i> for secure servers.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

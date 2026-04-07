@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | SecurePass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .legal-content {
+      max-width: 800px;
+      margin: 120px auto 60px;
+      padding: 3rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+    }
+    .legal-content h1 { margin-bottom: 2rem; font-size: 2.5rem; }
+    .legal-content h2 { margin: 2rem 0 1rem; color: var(--primary-color); }
+    .legal-content p { margin-bottom: 1rem; color: var(--text-secondary); }
+    .legal-content ul { margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary); }
+    .legal-content li { margin-bottom: 0.5rem; }
+    .back-home { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 8px; 
+      text-decoration: none; 
+      color: var(--text-secondary); 
+      margin-bottom: 2rem;
+      transition: var(--transition);
+    }
+    .back-home:hover { color: var(--primary-color); }
+  </style>
+</head>
+<body>
+  <div class="bg-blobs">
+    <div class="blob"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="logo.png" alt="SecurePass Logo">
+      <span class="logo-text">SecurePass</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#how-it-works">How It Works</a></li>
+      <li><a href="contact.html">Support</a></li>
+    </ul>
+    <a href="https://discord.com/oauth2/authorize?client_id=1490543537505308892&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">
+      Add to Discord
+    </a>
+  </nav>
+
+  <main class="legal-content reveal">
+    <a href="index.html" class="back-home"><i data-lucide="arrow-left"></i> Back to Home</a>
+    <h1>Terms of Service</h1>
+    <p>Last Updated: April 6, 2026</p>
+    
+    <p>By adding SecurePass (the "Service") to your Discord server or using our website, you agree to comply with the following Terms of Service. If you do not agree with these terms, please do not use the Service.</p>
+
+    <h2>1. Use of the Service</h2>
+    <p>SecurePass is provided "as is" and "as available". You agree to use the Service in compliance with Discord's Terms of Service and all applicable laws and regulations.</p>
+
+    <h2>2. Prohibited Content</h2>
+    <p>The Service must not be used for any illegal, harmful, or abusive activity. This includes, but is not limited to, the following:</p>
+    <ul>
+      <li>Spamming or flooding the Service.</li>
+      <li>Attempting to exploit vulnerabilities the Service is designed to protect against.</li>
+      <li>Impersonating official SecurePass staff or services.</li>
+    </ul>
+
+    <h2>3. Automated Interactions</h2>
+    <p>SecurePass operates as an automated bot. By using our verification flows, you acknowledge that certain interactions are logged and managed by automated systems to perform security checks.</p>
+
+    <h2>4. Liability Limitations</h2>
+    <p>In no event shall SecurePass or its developers be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use the Service.</p>
+
+    <h2>5. Termination</h2>
+    <p>We reserve the right to terminate or restrict your access to the Service at any time, without prior notice, if we determine that these Terms of Service have been violated or for security and operational reasons.</p>
+
+    <h2>6. Changes to Terms</h2>
+    <p>These Terms of Service may be updated from time to time. Your continued use of the Service after changes constitute acceptance of the new terms.</p>
+
+    <h2>7. Disclaimer</h2>
+    <p>The Service aims to provide security, but no tool is 100% foolproof. We do not guarantee that your server will be immune to all types of attacks.</p>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-container">
+          <img src="logo.png" alt="SecurePass Logo">
+          <span class="logo-text">SecurePass</span>
+        </a>
+        <p>Next-generation verification for modern Discord communities. Secure, fast, and simple.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="contact.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copyright">SecurePass © 2026. All rights reserved.</div>
+      <div class="footer-note">Handcrafted with <i data-lucide="heart" style="width: 14px; vertical-align: middle; color: #ef4444;"></i> for secure servers.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
