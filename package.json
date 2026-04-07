@@ -6,7 +6,11 @@
     "bot",
     "invite-checker"
   ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
   "scripts": {
+    "start": "concurrently \"npm run start:bot\" \"npm run start:invite\"",
     "start:bot": "cd bot && node init-db.js && node deploy-commands.js && node index.js",
     "start:invite": "cd invite-checker && npm start"
   }
